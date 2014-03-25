@@ -1,44 +1,58 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+<head lang="en">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  
+  <title>Schmittyapolis V2.0</title> 
+  <meta name="description" content="BlackTie.co - Free Handsome Bootstrap Themes" />      
+  <meta name="keywords" content="themes, bootstrap, free, templates, bootstrap 3, freebie,">
+  <meta property="og:title" content="">
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="fancybox/jquery.fancybox-v=2.1.5.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/font-awesome.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" type="text/css" href="css/main.css">  
+  
+  <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  
+  
+  <link rel="prefetch" href="images/zoom.png">
+    
+</head>
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-
-    </head>
-    <body>
-
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
+<body>
 
           {{ content }}
+</body>
 
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Your Name<br />
-                What You Are<br />
-                you@example.com
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
-            </div>
-          </div>
-        </div>
+  <!-- SCRIPTS -->
+  <script src="js/html5shiv.js"></script>
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="js/jquery-migrate-1.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="fancybox/jquery.fancybox.pack-v=2.1.5.js"></script>
+  <script src="js/script.js"></script>
+  
+  <!-- fancybox init -->
+  <script>
+  $(document).ready(function(e) {
+    var lis = $('.nav > li');
+    menu_focus( lis[0], 1 );
+    
+    $(".fancybox").fancybox({
+      padding: 10,
+      helpers: {
+        overlay: {
+          locked: false
+        }
+      }
+    });
+  
+  });
+  </script>
 
-    </body>
 </html>
