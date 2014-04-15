@@ -116,25 +116,27 @@ body {
   z-index: 10;
 }
 
-#special-active-menu-1,
-#special-active-menu-6 {
-  background-color: #4e4e4e !important;
+#special-active-menu-1 {
+background-color: #85C1F7 !important;
 }
 
 #special-active-menu-2 {
-  background-color: #1abc9c !important;
+background-color: #333333 !important;
 }
 
 #special-active-menu-3 {
-  background-color: #e74c3c !important;
+background-color: #669933 !important;
 }
 
 #special-active-menu-4 {
-  background-color: #34495e !important;
+background-color: #34495e !important;
 }
 
 #special-active-menu-5 {
-  background-color: #e67e22 !important;
+background-color: #CC6633 !important;
+}
+#special-active-menu-6 {
+background-color: #34495e !important;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -150,6 +152,13 @@ body {
     white-space: nowrap;
   }
   
+  
+
+
+
+
+
+
   .navbar-responsive-collapse  {
     width: 100%;
   }
@@ -177,17 +186,19 @@ body {
     margin-right: 12px;
   }
       
-  .nav li[data-slide="1"],
+  .nav li[data-slide="1"] {
+    background-color: #85c1f7
+    }
   .nav li[data-slide="6"] {
     background-color: #2f2f2f;
   }
   
   .nav li[data-slide="2"] {
-    background-color: #669933;
+    background-color: #333333;
   }
   
   .nav li[data-slide="3"] {
-    background-color: #e74c3c;
+    background-color: #669933;
   }
   
   .nav li[data-slide="4"] {
@@ -195,7 +206,7 @@ body {
   }
   
   .nav li[data-slide="5"] {
-    background-color: #e67e22;
+    background-color: #CC6633;
   }
   
   .navbar-brand {
@@ -228,17 +239,21 @@ body {
     -o-background-size: cover;
     background-size: cover;
     width: 100%;
-  background-attachment: relative;
-  background-position: center center;
+      background-position: center center;
 }
 
 #slide-1 h1 {
-  padding-top: 130px;
+  margin-top: 130px;
+  min-height: 100px;
+  background-size: contain !important;
+  text-indent: -9999px;
+  overflow: hidden;
+  background: transparent url('../images/schmittyapolis_logo.png') center center no-repeat;
 }
 
 @media (max-width: 991px) {
   #slide-1 {
-    background-position: -70% 0, 170% 0;
+    background-position: center center;
   }
 }
 
@@ -444,7 +459,7 @@ body {
 }
 
 #slide-4 i {
-    font-size: 80px;
+    font-size: 50px;
     color: white;
   }
 
